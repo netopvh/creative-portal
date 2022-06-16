@@ -10,7 +10,7 @@ import FormContact from "../components/FormContact";
 
 const Home: NextPage = () => {
 
-  const swiperRef = useRef();
+//   const swiperRef = useRef();
   const [collapse, setCollapse] = useState(true);
 
   return (
@@ -341,21 +341,24 @@ const Home: NextPage = () => {
                 <div className="col-lg-3">
                     <h4>Processo de desenvolvimento</h4>
                     <p className="fs-14 text-muted">Veja quais são os passos para desenvolver o seu projeto.</p>
-                    <button onClick={() => swiperRef?.current?.slidePrev() } className="carousel-control-prev d-none d-lg-block" type="button">
+                    <button className="prev carousel-control-prev d-none d-lg-block" type="button">
                         <AiOutlineArrowLeft />
                     </button>
-                    <button onClick={() => swiperRef?.current?.slideNext() } className="carousel-control-next d-none d-lg-block" type="button">
+                    <button className="next carousel-control-next d-none d-lg-block" type="button">
                       <AiOutlineArrowRight />
                     </button>
                 </div>
                 <div className="col-lg-8">
                   <Swiper
+                    navigation={{ 
+                        prevEl: '.prev',
+                        nextEl: '.next'
+                     }}
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={50}
                     slidesPerView={1}
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
-                    onSwiper={(swiper:any) => swiperRef.current = swiper}
                     onSlideChange={() => console.log('slide change')}
                   >
                     <SwiperSlide>
