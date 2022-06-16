@@ -468,10 +468,10 @@ const Home: NextPage = () => {
                 <div className="col-lg-3 col-md-4 col-6">
                     <h6 className="text-uppercase fw-semibold">Sobre Nós</h6>
                     <ul className="list-unstyled footer-link mt-3 mb-0 fs-14">
-                        <li><a href="{undefined}">Sobre nós</a></li>
-                        <li><a href="{undefined}">Suporte</a></li>
-                        <li><a href="{undefined}">GitHub Repo</a></li>
-                        <li><a href="{undefined}">Slack</a></li>
+                        <li><a href="#about">Sobre nós</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">GitHub Repo</a></li>
+                        <li><a href="#">Slack</a></li>
                     </ul>
                 </div>
 
@@ -487,7 +487,7 @@ const Home: NextPage = () => {
                     </h6>
                     <p className="mt-md-3 pt-3 pt-md-2 fs-14">Fique informado com a creative mobile.</p>
                     <div className="footer-subcribe text-end shadow-sm d-inline-block">
-                        <form action="{undefined}">
+                        <form action="#">
                             <input placeholder="Seu e-mail" type="email" />
                             <button type="submit" className="btn btn-primary">
                                 <AiFillBell />
@@ -497,25 +497,25 @@ const Home: NextPage = () => {
                     <div className="mt-md-4 mt-3">
                         <ul className="list-inline footer-social mb-0">
                             <li className="list-inline-item">
-                                <a href="{undefined}" className="rounded">
+                                <a href="#" className="rounded">
                                     <AiFillFacebook className="text-dark" />
                                 </a>
                             </li>
 
                             <li className="list-inline-item">
-                                <a href="{undefined}" className="rounded">
+                                <a href="#" className="rounded">
                                     <AiFillLinkedin className="text-dark" />
                                 </a>
                             </li>
 
                             <li className="list-inline-item">
-                                <a href="{undefined}" className="rounded">
+                                <a href="#" className="rounded">
                                     <AiFillInstagram className="text-dark" />
                                 </a>
                             </li>
 
                             <li className="list-inline-item">
-                                <a href="{undefined}" className="rounded">
+                                <a href="#" className="rounded">
                                     <AiFillTwitterSquare className="text-dark" />
                                 </a>
                             </li>
